@@ -14,8 +14,8 @@ import { UsersModule } from './users/users.module';
         SequelizeModule.forRoot({
             dialect: 'postgres',
             host: process.env.POSTGRES_HOST,
-            port: Number(process.env.POSTGRES_PORT),
-            username: process.env.POSTGRES_USERNAME,
+            port: 5432,
+            username: process.env.POSTGRES_USER,
             password: process.env.POSTGRES_PASSWORD,
             database: process.env.POSTGRES_DB,
             models: [],
